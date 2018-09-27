@@ -45,7 +45,7 @@ public class MasterMind {
 		return userInputCode;
 	}
 	
-	private void validation(int[] a) {
+	private void validation(int[] a) { 
 		/*- compare the generated code and user code
 		 *- if both codes are exact... notify the user "code confirmed
 		 *- else if there are digits from the user input that exist but not in the correct order... notify the user
