@@ -24,15 +24,16 @@ public class MasterMind {
 					System.out.println("	Code confirm !!!\n\n");
 					break;
 				}
-				System.out.println("\nThe random code : "+randomCode[0]+randomCode[1]+randomCode[2]+randomCode[3]);
+				//System.out.println("\nThe random code : "+randomCode[0]+randomCode[1]+randomCode[2]+randomCode[3]);
 				int[] userInputCode = getUserInput();
 				validation(userInputCode);
 			}while(this.cpt >= 1);
-			System.out.println("Game over");
+			System.out.println("\n\nGame over");
 			cpt=8;
 			y=0;
 
-			System.out.println("Would you like to play again ? yes/no");
+			System.out.println("The generated code was "+randomCode[0]+randomCode[1]+randomCode[2]+randomCode[3]+"\n\n"
+					+ "Would you like to play again ? yes/no");
 			scAnswer = new Scanner(System.in);
 			userAnswer = scAnswer.nextLine();
 		}while(userAnswer.trim().equals("yes"));
